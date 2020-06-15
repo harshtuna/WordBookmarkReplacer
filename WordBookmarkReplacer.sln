@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessor", "MsWordTemplateProcessor\MsWordTemplateProcessor.csproj", "{5D4A7259-0E07-41D1-B138-3FEA5B63B729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessorTest", "MsWordTemplateProcessorTest\MsWordTemplateProcessorTest.csproj", "{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D4A7259-0E07-41D1-B138-3FEA5B63B729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4A7259-0E07-41D1-B138-3FEA5B63B729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4A7259-0E07-41D1-B138-3FEA5B63B729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4A7259-0E07-41D1-B138-3FEA5B63B729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

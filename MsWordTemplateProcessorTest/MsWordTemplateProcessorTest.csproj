@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+
+        <IsPackable>false</IsPackable>
+
+        <RootNamespace>MsWordTemplateProcessor.Test</RootNamespace>
+
+        <TargetFramework>net48</TargetFramework>
+
+        <LangVersion>8</LangVersion>
+
+        <Nullable>warnings</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MsWordTemplateProcessor\MsWordTemplateProcessor.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\test.docx" />
+      <EmbeddedResource Include="Resources\test.docx">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
