@@ -8,16 +8,11 @@ namespace MsWordTemplateProcessor.Test
 {
     public class BookmarkReplacerTest
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
-        public void TestInsertTextIntoBookmark()
+        public void TestInsertTextIntoBookmarkInMemory()
         {
             var templatePath = Path.Combine(TestContext.CurrentContext.TestDirectory, @"Resources\test.docx");
-            
+
             Console.WriteLine($"templatePath: {templatePath}");
 
             using var memoryStream = new MemoryStream();
@@ -45,6 +40,14 @@ namespace MsWordTemplateProcessor.Test
                 },
                 Utils.BookmarkValues(templateProcessor.Document, bs => bs.Parent.InnerText)
             );
+        }
+
+        [Test]
+        public void TestInsertTextIntoBookmarkInFile()
+        {
+            var templatePath = Path.Combine(TestContext.CurrentContext.TestDirectory, @"Resources\test.docx");
+
+            Console.WriteLine($"templatePath: {templatePath}");
 
             var file2Path = Path.GetTempFileName() + ".docx";
             Console.WriteLine($"temp file: {file2Path}");
@@ -64,6 +67,7 @@ namespace MsWordTemplateProcessor.Test
             );
             file2Processor1.Document.Save();
             file2Processor1.Document.Close();
+            
             var file2Processor2 = new BookmarkTemplateProcessor(file2Path);
             file2Processor2.ApplyValue("hdr_bkm", "test in place");
             file2Processor2.Document.Save();
@@ -78,7 +82,6 @@ namespace MsWordTemplateProcessor.Test
                 },
                 Utils.BookmarkValues(document2, bs => bs.Parent.InnerText)
             );
-            
         }
     }
 }
