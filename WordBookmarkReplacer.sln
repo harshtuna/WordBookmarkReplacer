@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessor", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessorTest", "MsWordTemplateProcessorTest\MsWordTemplateProcessorTest.csproj", "{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessorCLI", "MsWordTemplateProcessorCLI\MsWordTemplateProcessorCLI.csproj", "{C57B82C0-20A8-4D29-BAA0-EC38B2A8C734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsWordTemplateProcessorCliTest", "MsWordTemplateProcessorCliTest\MsWordTemplateProcessorCliTest.csproj", "{34F77C19-8093-4FA7-8584-895E0E42046F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4729EF01-2D0B-426B-9C2B-BDDDF2661D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57B82C0-20A8-4D29-BAA0-EC38B2A8C734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57B82C0-20A8-4D29-BAA0-EC38B2A8C734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57B82C0-20A8-4D29-BAA0-EC38B2A8C734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57B82C0-20A8-4D29-BAA0-EC38B2A8C734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F77C19-8093-4FA7-8584-895E0E42046F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F77C19-8093-4FA7-8584-895E0E42046F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F77C19-8093-4FA7-8584-895E0E42046F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F77C19-8093-4FA7-8584-895E0E42046F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

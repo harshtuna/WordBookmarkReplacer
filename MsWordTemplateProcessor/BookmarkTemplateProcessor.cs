@@ -37,7 +37,13 @@ namespace MsWordTemplateProcessor
 
         ~BookmarkTemplateProcessor()
         {
-            Document.Close();
+            try
+            {
+                Document.Close();
+            }
+            catch (ObjectDisposedException)
+            {
+            }
         }
 
         // 
