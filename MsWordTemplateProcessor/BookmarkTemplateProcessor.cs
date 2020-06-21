@@ -60,11 +60,13 @@ namespace MsWordTemplateProcessor
 
         private void InsertTextIntoBookmark(string bookmarkName, string newText)
         {
-            foreach (var bookmarkStart in _bookmarks[bookmarkName])
-            {
-                EraseBookmarkContent(bookmarkStart);
-                bookmarkStart?.Parent.InsertAfter(new Run(new Text(newText)), bookmarkStart);
-            }
+            if (_bookmarks.ContainsKey(bookmarkName))
+                foreach (var bookmarkStart in _bookmarks[bookmarkName])
+                {
+                    EraseBookmarkContent(bookmarkStart);
+                    bookmarkStart?.Parent.InsertAfter(new Run(new Text(newText)), bookmarkStart);
+                }
+            else Console.WriteLine($"Bookmark not found: [{bookmarkName}]");
         }
 
         private static WordprocessingDocument OpenDocument(string filePath)
